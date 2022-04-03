@@ -29,6 +29,16 @@ git clone https://github.com/megvii-research/PCB
 cd PCB
 pip install -r requirements/build.txt
 pip install -v -e .  # or "python setup.py develop"
+# Install extra dependency for LVIS dataset
+pip install git+https://github.com/lvis-dataset/lvis-api.git
+```
+
+### Data preparing
+```bash
+mkdir data
+# LVIS uses the same images as COCO's, so you need to first download COCO dataset and replace the original annotations with LVIS annotations, then link the folder ($COCO) to the new path (i.e., data/lvis_v0.5 and data/lvis_v1).
+ln -sf $COCO/ data/lvis_v0.5
+ln -sf $COCO/ data/lvis_v1
 ```
 
 ### Training
