@@ -16,7 +16,7 @@ Long-tailed instance segmentation is a challenging task due to the extreme imbal
 ## Prerequisites
 - python 3.7
 - pytorch 1.9.0
-- torchvision 1.10.0
+- torchvision 0.10.0
 - opencv 4.5.3
 - [mmcv 1.3.12](https://github.com/open-mmlab/mmcv/tree/v1.3.12)
 
